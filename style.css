@@ -1018,14 +1018,14 @@ padding: 1.5vw 7vw ;
 }
 nav #h3{
   position: absolute;
-  margin-top: 1vw;
+  margin-top: 2.5vw;
   display: block;
-  font-size: 7vw;
+  font-size: 8vw;
 }
 .page1-content #img{
   position: absolute;
-  margin-right: 73%;
-  margin-top: 7.5vw;
+  margin-right: 70%;
+  margin-top: 9vw;
   display: block;
 }
 

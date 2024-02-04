@@ -1246,7 +1246,7 @@ nav #h3 {
   .deleted-section{
     height: 320vh;
     width: 171.8%;
-    background-color: rgb(203, 86, 86);
+    /* background-color: rgb(203, 86, 86); */
     padding: 4vw 4vw ;
     display: block;
   }
@@ -1268,7 +1268,7 @@ nav #h3 {
     height: 86vh;
     width:100%;
     /* background-color: #16c7cd; */
-    margin-top: 10vw;
+    margin-top: 18vw;
    
   }
   .big-text-area  .dtext{
@@ -1277,7 +1277,7 @@ nav #h3 {
     /* background-color: rgb(240, 89, 30); */
   }
   .big-text-area  .dtext1{
-    height: 17vh;
+    height: 12vh;
     width: 100%;
     /* background-color: rgb(30, 240, 166); */
   }
@@ -1287,12 +1287,12 @@ nav #h3 {
    
   }
   .big-text-area  .dtext2{
-    height: 13vh;
+    height: 18vh;
     width: 100%;
     /* background-color: rgb(86, 30, 240); */
   }
   .big-text-area  .dtext2 h3{
-    font-size: 11vw;
+    font-size: 10vw;
     width: 99%;
 
   }
@@ -1327,6 +1327,7 @@ nav #h3 {
     object-fit: cover;
     position: absolute;
     transition: all ease 1s;
+    border-radius: 20px;
   }
   .img-box:hover img{
     opacity: 0;
@@ -1336,6 +1337,7 @@ nav #h3 {
     width: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius: 20px;
   }
   
   

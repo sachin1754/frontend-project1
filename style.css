@@ -1267,12 +1267,12 @@ nav #h3 {
   .deleted-section .big-text-area{
     height: 99vh;
     width:100%;
-    /* background-color: #2fc3e4; */
+    background-color: #2fc3e4;
   }
   .big-text-area  .dtext{
     height: 28vh;
     width: 100%;
-    /* background-color: rgb(58, 117, 254); */
+    background-color: rgb(58, 254, 130);
   }
   .big-text-area .dtext h1{
     font-size: 16vw;

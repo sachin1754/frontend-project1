@@ -156,7 +156,9 @@ nav h3{
     font-size: 0.9vw;
     background-color: black;
     color: white;
-    padding: 5.6px 18px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 1vw;
     border-radius: 15px;
 }
 .page3-elements{
@@ -422,7 +424,15 @@ nav h3{
     color: rgb(255, 255, 255);
     margin-top: 2vw;
   }
-  
+  .card__content h5{
+    color: rgb(255, 255, 255);
+    font-size: 2vw;
+    width: 90%;
+  }
+  .card__content h6{
+    font-size: 1.3vw;
+    margin-top: 2.5vw;
+  }
   .card__content {
     position: absolute;
     top: 0;

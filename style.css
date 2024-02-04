@@ -154,7 +154,7 @@ nav #h3 {
 .page3 {
   min-height: 110vh;
   width: 100%;
-  background-color: rgb(243, 139, 4);
+  /* background-color: rgb(243, 139, 4); */
   position: relative;
   padding: 3vw;
 }
@@ -1312,12 +1312,12 @@ nav #h3 {
   }
   .big-text-area .dimage{
     height: 85vh;
-    width: 65vh;
+    width: 75vh;
     /* background-color: rgb(148, 148, 148); */
   }
   .dimage .img-box{
     height: 183vw;
-    width: 140vw;
+    width: 162vw;
     /* background-color: rgb(47, 83, 201); */
     position: relative;
   }
@@ -1339,6 +1339,48 @@ nav #h3 {
     object-position: center;
     border-radius: 20px;
   }
+  .page4 {
+    height: 90vh;
+    width: 171.8%;
+    background-color: rgb(123, 135, 135);
+    padding: 3vw 3vw;
+  }
+  
+  .page4 .quality-line {
+    height: 17vw;
+    width: 100%;
+    /* background-color: red; */
+  }
+  
+  .page4 .quality-line h3 {
+    font-size: 5.4vw;
+    font-weight: 400;
+  }
+  
+  .page4 .line2 {
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 3vw;
+  }
+  
+  .page4 .main-text {
+    height: 50vw;
+    width: 100%;
+    /* background-color: salmon; */
+    margin-top: 5dvb;
+  }
+  
+  .page4 .main-text p {
+    font-size: 15vw;
+    font-weight: 500;
+    width: 97%;
+  }
+  
+  
+  
+  
+  
+
+  
   
   
   

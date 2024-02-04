@@ -982,11 +982,11 @@ nav #h3{
     font-size: 1.4vw;
 }
 nav{
-    background-color: rgb(27, 179, 45);
+    /* background-color: rgb(27, 179, 45); */
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 10vw 3vw ;
+    padding: 7vw 3vw ;
 }
 nav h3{
     font-size: 1.5vw;
@@ -1000,6 +1000,14 @@ nav #h1{
 nav #sm{
   margin-left: 80%;
   font-size: 7vw;
+  margin-top: 5px;
+  border-radius: 50px;
+  border: 2px solid rgb(125, 125, 125);
+padding: 1.5vw 7vw ;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
 }
 
 .page1-content h1{
@@ -1016,8 +1024,8 @@ nav #h3{
 }
 .page1-content #img{
   position: absolute;
-  margin-right: 70%;
-  margin-top: 10vw;
+  margin-right: 73%;
+  margin-top: 7.5vw;
   display: block;
 }
 

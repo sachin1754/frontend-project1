@@ -1244,7 +1244,7 @@ nav #h3 {
   
 
   .deleted-section{
-    height: 320vh;
+    height: 370vh;
     width: 171.8%;
     /* background-color: rgb(203, 86, 86); */
     padding: 4vw 4vw ;
@@ -1265,7 +1265,7 @@ nav #h3 {
     font-size: 3.4vw;
   }
   .deleted-section .big-text-area{
-    height: 86vh;
+    height: 100vh;
     width:100%;
     /* background-color: #16c7cd; */
     margin-top: 18vw;
@@ -1311,13 +1311,13 @@ nav #h3 {
 
   }
   .big-text-area .dimage{
-    height: 70vh;
-    width: 74vh;
+    height: 85vh;
+    width: 65vh;
     /* background-color: rgb(148, 148, 148); */
   }
   .dimage .img-box{
-    height: 150vw;
-    width: 159vw;
+    height: 183vw;
+    width: 140vw;
     /* background-color: rgb(47, 83, 201); */
     position: relative;
   }

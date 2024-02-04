@@ -1434,37 +1434,42 @@ nav #h3 {
   }
   
   .project-below {
-    background-color: rgb(36, 189, 141);
+    /* background-color: rgb(36, 189, 141); */
     width: 100%;
     margin-top: 10vw;
     font-size: 3.9vw;
   }
   
   .page6 .proj-img {
-    height: 70vw;
+    height: 110vw;
     width: 100%;
     background-color: rgb(34, 100, 194);
     margin-top: 19vw;
-    margin-top: 2vw;
+    margin-top: 6vw;
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
   }
   
   
   .card {
     position: relative;
-    width: 49vw;
-    height: 58vw;
+    width: 80vw;
+    height: 90vw;
     background-color: #000000;
     border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+
     perspective: 1000px;
     box-shadow: 0 0 0 5px #ffffff80;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
+  .card1{
+    display: none;
+  }
+  
   
   .card img {
     width: 48px;

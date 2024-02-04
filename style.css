@@ -1244,9 +1244,9 @@ nav #h3 {
   
 
   .deleted-section{
-    height: 500vh;
+    height: 360vh;
     width: 171.8%;
-    /* background-color: rgb(184, 31, 31); */
+    /* background-color: rgb(203, 86, 86); */
     padding: 4vw 4vw ;
     display: block;
   }
@@ -1254,7 +1254,7 @@ nav #h3 {
     height: 9vw;
     width: 100%;
     /* background-color: rgb(47, 166, 246); */
-    margin-top: 20vw;
+    margin-top: 22vw;
     display: flex;
     justify-content: space-between;
   }
@@ -1267,17 +1267,29 @@ nav #h3 {
   .deleted-section .big-text-area{
     height: 99vh;
     width:100%;
-    background-color: #2fc3e4;
+    /* background-color: #16c7cd; */
+   
   }
   .big-text-area  .dtext{
-    height: 28vh;
+    height: 27vh;
     width: 100%;
-    background-color: rgb(58, 254, 130);
+    /* background-color: rgb(240, 89, 30); */
+  }
+  .big-text-area  .dtext1{
+    height: 21vh;
+    width: 100%;
+    /* background-color: rgb(30, 240, 166); */
+  }
+  .big-text-area  .dtext2{
+    height: 22vh;
+    width: 100%;
+    /* background-color: rgb(86, 30, 240); */
+   
   }
   .big-text-area .dtext h1{
     font-size: 16vw;
     width: 90%;
-    margin-top: 5vw;
+    /* margin-top: 8vw; */
   }
   .big-text-area h2{
     font-size: 12.1vw;
@@ -1290,13 +1302,13 @@ nav #h3 {
   }
   .big-text-area .dimage{
     height: 70vh;
-    width: 100%;
-    /* background-color: rgb(148, 148, 148); */
+    width: 74vh;
+    background-color: rgb(148, 148, 148);
   }
   .dimage .img-box{
     height: 150vw;
-    width: 160vw;
-    /* background-color: rgb(201, 47, 193); */
+    width: 159vw;
+    background-color: rgb(47, 83, 201);
     position: relative;
   }
   .dimage .img-box img{

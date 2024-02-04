@@ -1340,14 +1340,15 @@ nav #h3 {
     border-radius: 20px;
   }
   .page4 {
-    height: 90vh;
+    height: 100vh;
     width: 171.8%;
-    background-color: rgb(123, 135, 135);
+    background-color: rgb(52, 136, 144);
     padding: 3vw 3vw;
   }
   
   .page4 .quality-line {
-    height: 17vw;
+    height: 19vw;
+    margin-top: 23vw;
     width: 100%;
     /* background-color: red; */
   }
@@ -1359,13 +1360,13 @@ nav #h3 {
   
   .page4 .line2 {
     border: 1px solid rgb(0, 0, 0);
-    margin-top: 3vw;
+    margin-top: 5vw;
   }
   
   .page4 .main-text {
     height: 50vw;
     width: 100%;
-    /* background-color: salmon; */
+    background-color: salmon;
     margin-top: 5dvb;
   }
   

@@ -154,7 +154,7 @@ nav #h3 {
 .page3 {
   min-height: 110vh;
   width: 100%;
-  /* background-color: antiquewhite; */
+  background-color: rgb(243, 139, 4);
   position: relative;
   padding: 3vw;
 }
@@ -237,6 +237,50 @@ nav #h3 {
 
 .page3-elements .box:hover img {
   opacity: 0;
+}
+.deleted-section{
+  height: 400vh;
+  width: 100%;
+  /* background-color: rgb(237, 110, 110); */
+  padding: 4vw 4vw ;
+  display: none;
+}
+.deleted-section .new-text-area{
+  height: 4vw;
+  width: 100%;
+  /* background-color: rgb(211, 80, 80); */
+  margin-top: 6vw;
+  display: flex;
+  justify-content: space-between;
+}
+.deleted-section .big-text-area{
+  height: 110vh;
+  width:100%;
+  /* background-color: #2fc3e4; */
+}
+.big-text-area  .dtext{
+  height: 40vh;
+  width: 100%;
+  /* background-color: rgb(161, 80, 80); */
+}
+.big-text-area .dtext h1{
+  font-size: 5vw;
+  width: 60%;
+}
+.big-text-area .dimage{
+  height: 70vh;
+  width: 60%;
+  /* background-color: rgb(148, 148, 148); */
+}
+.dimage .img-box{
+  height: 33vw;
+  width: 39vw;
+  /* background-color: rgb(47, 201, 152); */
+}
+.img-box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .page4 {
@@ -1154,10 +1198,125 @@ nav #h3 {
     font-size: 10vw;
     font-size: 800;
     width: 98%;
-    
     /* background-color: red; */
     margin-top: 4vw;
   }
+  .page3 {
+    height: 170vh;
+    width: 171.8%;
+    background-color: rgb(253, 151, 18);
+    position: relative;
+    padding: 3vw;
+    display: none;
+  }
+  #page3-top {
+    /* background-color: red; */
+    text-align: center;
+    margin-top: 1vw;
+  
+  }
+  
+  #page3-top h4 {
+   
+    font-size: 4vw;
+    position: relative;
+  
+  }
+  
+  #page3-top h2 {
+    font-size: 5vw;
+    font-weight: 500;
+  }
+  
+  #page3-top h4 span {
+    display: none;
+    font-size: 1.5vw;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 1vw 2vw;    
+   border-radius: 13px;
+  
+    
+  }
+  
 
+  .deleted-section{
+    height: 500vh;
+    width: 171.8%;
+    /* background-color: rgb(184, 31, 31); */
+    padding: 4vw 4vw ;
+    display: block;
+  }
+  .deleted-section .new-text-area{
+    height: 9vw;
+    width: 100%;
+    /* background-color: rgb(47, 166, 246); */
+    margin-top: 20vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .new-text-area h3{
+    font-size: 5.4vw;
+  }
+  .new-text-area h4{
+    font-size: 3.4vw;
+  }
+  .deleted-section .big-text-area{
+    height: 99vh;
+    width:100%;
+    /* background-color: #2fc3e4; */
+  }
+  .big-text-area  .dtext{
+    height: 28vh;
+    width: 100%;
+    /* background-color: rgb(58, 117, 254); */
+  }
+  .big-text-area .dtext h1{
+    font-size: 16vw;
+    width: 90%;
+    margin-top: 5vw;
+  }
+  .big-text-area h2{
+    font-size: 12.1vw;
+    width: 100%;
+  }
+  .big-text-area h3{
+    font-size: 12.8vw;
+    width: 90%;
+
+  }
+  .big-text-area .dimage{
+    height: 70vh;
+    width: 100%;
+    /* background-color: rgb(148, 148, 148); */
+  }
+  .dimage .img-box{
+    height: 150vw;
+    width: 160vw;
+    /* background-color: rgb(201, 47, 193); */
+    position: relative;
+  }
+  .dimage .img-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: all ease 1s;
+  }
+  .img-box:hover img{
+    opacity: 0;
+  }
+  .img-box video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  
+  
 
 }

@@ -73,7 +73,7 @@ function page2animation(){
         }
     })
 }
-page2animation();
+// page2animation();
 
 var loader = ()=>{
 

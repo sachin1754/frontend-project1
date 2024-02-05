@@ -1759,13 +1759,13 @@ nav #h3 {
   }
   
   .team-area {
-    height: 20vw;
-    width: 100%;
+    height: 25vw;
+    width: 171%;
     /* background-color: rgb(248, 111, 111); */
   }
   
   .team-area .t1 {
-    height: 2vw;
+    height: 4vw;
     width: 100%;
     /* background-color: green; */
     display: flex;
@@ -1775,12 +1775,12 @@ nav #h3 {
   }
   
   .t1 h3 {
-    font-size: 1vw;
+    font-size: 3vw;
     font-weight: 500;
   }
   
   .t2 h1 {
-    font-size: 3vw;
+    font-size: 7vw;
     font-weight: 500;
   }
   
@@ -1789,7 +1789,7 @@ nav #h3 {
   }
   
   .team-area .t2 {
-    height: 3.5vw;
+    height: 6vw;
     width: 100%;
     /* background-color: rgb(28, 0, 128); */
     display: flex;
@@ -1797,6 +1797,200 @@ nav #h3 {
     text-align: center;
     align-items: center;
   }
+  .footer {
+    height: 45vh;
+    width: 171%;
+    background-color: black;
+  }
+  
+  .footer .foot1 {
+    height: 25vw;
+    width: 100%;
+    /* background-color: salmon; */
+    display: flex;
+    padding: 3vw 3vw;
+  }
+  
+  .foot1 .ft1 {
+    height: 9.5vw;
+    width: 35vw;
+    /* background-color: red; */
+    padding: 2vw;
+  }
+  
+  .ft1 .button {
+    display: inline-block;
+    margin-top: 5vw;
+    right: 5%;
+    padding: 3vw 2.5vw ;
+    border: 1px solid #4f4f4f;
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+   
+    font-size: 15px;
+    cursor: pointer;
+    color: black;
+    z-index: 1;
+  }
+  
+  .button:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 140%;
+    height: 180%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #0b0b0b;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+  }
+  
+  .button:hover {
+    color: #ffffff;
+    border: 1px solid #ed8815;
+  }
+  
+  .button:hover:before {
+    top: -35%;
+    background-color: #000000;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  
+  .button:hover:after {
+    top: -45%;
+    background-color: #000000;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
+  
+  .ft1 h3 {
+    font-size: 3.2vw;
+    color: white;
+  }
+  
+  .foot1 .ft2 {
+    height: 19vw;
+    width: 22vw;
+    /* background-color: rgb(0, 225, 255); */
+    margin-left: 80vw;
+  }
+  
+  .ft2 h4 {
+    font-size: 3.5vw;
+    color: white;
+    font-weight: 400;
+  }
+  
+  .foot1 .ft3 {
+    height: 19vw;
+    width: 19vw;
+    /* background-color: rgb(226, 112, 19); */
+    margin-left: 6vw;
+  }
+  
+  .ft3 h5 {
+    font-size: 3.3vw;
+    color: white;
+    font-weight: 400;
+  
+  }
+  
+  .ft4 {
+    /* background-color: salmon; */
+    display: flex;
+    height: 20vw;
+    width: 100%;
+    padding: 4vw 4vw;
+    margin-top: 7vw;
+  }
+  
+  .ft4 .texto1 {
+    height: 13vw;
+    width: 55vw;
+    /* background-color: rgb(0, 255, 60); */
+    margin-left: 1vw;
+  }
+  
+  .ft4 .texto1 h3 {
+    font-size: 3.5vw;
+    color: white;
+    font-weight: 400;
+  }
+  
+  .ft4 .text2 {
+    height: 7vw;
+    width: 65vw;
+    /* background-color: rgb(55, 201, 42); */
+    display: flex;
+  
+    margin-left: 40vw;
+  }
+  
+  .text2 .text3 {
+    height: 5vw;
+    width: 18vw;
+    /* background-color: #ed8815; */
+    margin-left: 35vw;
+  
+  }
+  
+  .text3 h3 {
+    font-size: 2vw;
+    font-weight: 400;
+    color: white;
+  }
+  
+  .text2 .text4 {
+    height: 3vw;
+    width: 15vw;
+  
+    /* background-color: #85156b; */
+    /* margin-left: 2vw; */
+  }
+  
+  .text4 h3 {
+    font-size: 2vw;
+    font-weight: 400;
+    color: white;
+  }
+  
+  .footer .main-heading {
+    height: 33vw;
+    width: 100%;
+    /* background-color: orange; */
+    padding: 4vw 4vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 2vw;
+  }
+  
+  .footer .main-heading h1 {
+    font-size: 32vw;
+    color: white;
+    font-weight: 500;
+  }
+  
+  
   
   
   

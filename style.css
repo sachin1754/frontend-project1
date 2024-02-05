@@ -1430,7 +1430,7 @@ nav #h3 {
     font-size: 8vw;
   }
   .page6 {
-    height: 70vh;
+    height: 74vh;
     width: 171%;
     /* background-color: rgb(230, 37, 37); */
     padding: 3vw 3vw;
@@ -1566,7 +1566,7 @@ nav #h3 {
     height: 100vh;
     width: 171%;
     /* background-color: rgb(58, 115, 221); */
-    padding: 11vw 11vw;
+    /* padding: 11vw 11vw; */
     position: relative;
     
   }

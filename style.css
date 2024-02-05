@@ -1563,7 +1563,7 @@ nav #h3 {
 
 
   .page7 {
-    height: 100vh;
+    height: 110vh;
     width: 171%;
     /* background-color: rgb(58, 115, 221); */
     /* padding: 11vw 11vw; */
@@ -1682,8 +1682,6 @@ nav #h3 {
   
   .touch-area {
     display: flex;
-  
-  
   }
   
   .touch-area h1 {
@@ -1719,6 +1717,7 @@ nav #h3 {
     /* background-color: rgb(80, 225, 215);  */
     display: flex;
     gap: 15vw;
+    margin-top: 5vw;
     color: black;
 
     /* padding: 2vw 2vw; */

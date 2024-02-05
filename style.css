@@ -1442,16 +1442,16 @@ nav #h3 {
   }
   
   .project-below {
-    background-color: rgb(36, 189, 141);
+    /* background-color: rgb(36, 189, 141); */
     width: 100%;
     margin-top: 10vw;
-    font-size: 4.6vw;
+    font-size: 6vw;
   }
   
   .page6 .proj-img {
     height: 110vw;
     width: 100%;
-    background-color: rgb(34, 100, 194);
+    /* background-color: rgb(34, 100, 194); */
     margin-top: 19vw;
     margin-top: 8vw;
     display: flex;
@@ -1565,16 +1565,16 @@ nav #h3 {
   .page7 {
     height: 100vh;
     width: 171%;
-    /* background-color: rgb(66, 104, 231); */
-    padding: 13vw 20vw;
+    /* background-color: rgb(58, 115, 221); */
+    padding: 11vw 11vw;
     position: relative;
     
   }
   
   .page7 .card1 {
     position: relative;
-    width: 160%;
-    height: 75vw;
+    width: 200%;
+    height: 90vw;
     background: rgb(0, 0, 0);
     display: flex;
     align-items: center;
@@ -1583,6 +1583,7 @@ nav #h3 {
     font-weight: bold;
     border-radius: 20px;
     cursor: pointer;
+    overflow: hidden;
   }
   
   .card1::before,
@@ -1630,24 +1631,25 @@ nav #h3 {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 20px;
   }
   
   .page7 .build-text {
-    height: 60vw;
-    width: 120vw;
+    height: 90vw;
+    width: 150vw;
     /* background-color: rgb(207, 157, 194); */
   
     position: absolute;
-    margin-top: 85vw;
+    margin-top: 95vw;
   }
   
   .build-text h3 {
-    font-size: 6vw;
+    font-size: 9vw;
   }
   
   .build-text p {
-    font-size: 3vw;
-    margin-top: 2vw;
+    font-size: 4vw;
+    margin-top: 5vw;
   }
   
   .page7 button {
@@ -1663,6 +1665,7 @@ nav #h3 {
    padding: 2vw 3vw ;
     text-decoration: none;
     cursor: pointer;
+    margin-top: 3vw;
     background: #fff;
     user-select: none;
     -webkit-user-select: none;

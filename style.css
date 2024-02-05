@@ -100,6 +100,9 @@ nav h3 {
   font-size: 23vw;
   line-height: 26vw;
 }
+nav #h3{
+  display: none;
+}
 
 nav #h3 {
   position: absolute;
@@ -591,7 +594,7 @@ nav #h3 {
 }
 
 .card1::before,
-.card1::after {
+/* .card1::after {
   position: absolute;
   content: "";
   width: 2%;
@@ -603,7 +606,7 @@ nav #h3 {
   font-weight: bold;
   background-color: #FF5F38;
   transition: all 0.5s;
-}
+} */
 
 .card1::before {
   top: 0;
@@ -1424,7 +1427,7 @@ nav #h3 {
   .page6 {
     height: 90vh;
     width: 171%;
-    background-color: rgb(209, 84, 84);
+    /* background-color: rgb(230, 37, 37); */
     padding: 3vw 3vw;
   }
   
@@ -1437,15 +1440,15 @@ nav #h3 {
     /* background-color: rgb(36, 189, 141); */
     width: 100%;
     margin-top: 10vw;
-    font-size: 3.9vw;
+    font-size: 4.6vw;
   }
   
   .page6 .proj-img {
     height: 110vw;
     width: 100%;
-    background-color: rgb(34, 100, 194);
+    /* background-color: rgb(34, 100, 194); */
     margin-top: 19vw;
-    margin-top: 6vw;
+    margin-top: 8vw;
     display: flex;
     justify-content: space-between;
   }
@@ -1454,7 +1457,7 @@ nav #h3 {
   .card {
     position: relative;
     width: 80vw;
-    height: 90vw;
+    height: 99vw;
     background-color: #000000;
     border-radius: 16px;
     display: flex;
@@ -1466,7 +1469,7 @@ nav #h3 {
     box-shadow: 0 0 0 5px #ffffff80;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
-  .card1{
+  .cardo{
     display: none;
   }
   
@@ -1489,28 +1492,26 @@ nav #h3 {
   }
   
   .card__content h2 {
-    width: 80%;
-    font-size: 2.5vw;
+    width: 96%;
+    font-size: 6.5vw;
     font-weight: 900;
   }
   
-  .card__content h3 {
-    font-size: 1.4vw;
+  /* .card__content h3 {
+    font-size: 10vw;
     width: 98%;
     color: rgb(255, 255, 255);
     margin-top: 2vw;
-  }
+  } */
+
   
   .card__content h5 {
     color: rgb(255, 255, 255);
-    font-size: 2vw;
-    width: 90%;
+    font-size: 4vw;
+    width: 100%;
+    margin-top: 5%;
   }
   
-  .card__content h6 {
-    font-size: 1.3vw;
-    margin-top: 2.5vw;
-  }
   
   .card__content {
     position: absolute;
@@ -1550,8 +1551,9 @@ nav #h3 {
   
   .card__content h3 {
     color: rgb(255, 255, 255);
-    width: 95%;
-    font-size: 1.3vw;
+    width: 100%;
+    margin-top: 5vw;
+    font-size: 5.5vw;
   }
   
   

@@ -129,3 +129,10 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
+// var vd = document.querySelector("#svg")
+// var button = document.querySelector("#btt")
+// vd.addEventListener("click",function(){
+//   button.innerHTML = `<a href="practise.html"></a> `
+// })

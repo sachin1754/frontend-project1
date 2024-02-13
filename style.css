@@ -345,30 +345,34 @@ nav #h3 {
 
 
 .page5 button{
-  height: 12vw;
-  width: 35vw;
-  border-radius: 18px;
+  height: 4vw;
+  width: 11vw;
+  border-radius: 29px;
   position: absolute;
   justify-content: center;
   text-align: center;
   display: flex;
   align-items: center;
   z-index: 100;
-  background-color: rgb(242, 242, 242);
-  margin-top: 42vw;
+  background-color: rgb(234, 230, 230);
+  margin-top: 10vw;
   border: none;
-  font-size: 4vw;
+  font-size: 1.3vw;
   color: rgb(0, 0, 0);
-  right: 50vw;
+  right: 44vw;
+  font-size: 600;
+}
+.page5 button:hover{
+  cursor: pointer;
 }
 .page5 i{
-  margin-top: 1vw;
-  margin-left: 2vw;
-  font-size: 6vw;
+  margin-top: 0vw;
+  margin-left: 10px;
+  font-size: 2.1vw;
 }
 
 .page5 #btt{
-  display: none;
+  
 }
 
 
@@ -1464,29 +1468,33 @@ text-align: center;
     align-items: center;
     text-align: center;
   }
-  
-  .page5 .animated-button {
-    position: relative;
+  .page5 button{
+    height: 12vw;
+    width: 35vw;
+    border-radius: 18px;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
     display: flex;
     align-items: center;
-    gap: 4px;
-    padding: 16px 36px;
-    border: 4px solid;
-    border-color: transparent;
-    font-size: 18px;
-    background-color: inherit;
-    border-radius: 100px;
-    font-weight: 600;
+    z-index: 100;
+    background-color: rgb(242, 242, 242);
+    margin-top: 42vw;
+    border: none;
+    font-size: 4vw;
     color: rgb(0, 0, 0);
-    box-shadow: 0 0 0 2px rgb(106, 106, 106);
-    cursor: pointer;
-    overflow: hidden;
-    margin-top: 43vw;
-    margin-left: 7.5%;
-    position: absolute;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    right: 50vw;
   }
-
+  .page5 i{
+    margin-top: 1vw;
+    margin-left: 2vw;
+    font-size: 6vw;
+  }
+  
+  .page5 #btt{
+    display: none;
+  }
+  
 
   .page5 video {
     height: 100%;

@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+  }
+  .page1{
+    height: 230vh;
+    width: 100%;
+    background-color: rgb(21, 20, 20);
+    display: flex;
+  }
+  .container1{
+    height: 230vh;
+    width:40%;
+    /* border:  2px solid rgb(231, 51, 51); */
+  }
+  .container2{
+    height: 230vh;
+    width: 60%;
+    /* border:  2px solid rgb(44, 201, 253); */
+    padding: 3vw 3vw ;
+}
+.text-area1{
+  height: 29vw;
+  width: 100%;
+  /* background-color: antiquewhite; */
+  padding: 2vw 2vw;
+}
+.text-area1 h1{
+  font-size: 8vw;
+  line-height: -4;
+  font-family: roice;
+  color: white;
+  font-weight: 400;
+}
+.text-area2{
+  height: 40vw;
+  width: 100%;
+  /* background-color: red; */
+  margin-top: 16vw;
+  padding: 2vw 2vw;
+}
+.text-area2 h1{
+  font-size: 4vw;
+  font-weight: 500;
+  font-family: roice;
+}
+.text-area2 p{
+  font-size: 2vw; 
+  margin-top: 2vw;
+}
+.text-area2 button{
+  margin-top: 2vw;
+}
+.btn-53,
+.btn-53 *,
+.btn-53 :after,
+.btn-53 :before,
+.btn-53:after,
+.btn-53:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn-53 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+
+.btn-53:disabled {
+  cursor: default;
+}
+
+.btn-53:-moz-focusring {
+  outline: auto;
+}
+
+.btn-53 svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn-53 [hidden] {
+  display: none;
+}
+
+.btn-53 {
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.btn-53 .original {
+  background: #fff;
+  color: #000;
+  display: grid;
+  inset: 0;
+  place-content: center;
+  position: absolute;
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+.btn-53:hover .original {
+  transform: translateY(100%);
+}
+
+.btn-53 .letters {
+  display: inline-flex;
+}
+
+.btn-53 span {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+}
+
+.btn-53 span:nth-child(2n) {
+  transform: translateY(15px);
+}
+
+.btn-53:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.btn-53:hover span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.btn-53:hover span:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.btn-53:hover span:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.btn-53:hover span:nth-child(5) {
+  transition-delay: 0.4s;
+}
+
+.btn-53:hover span:nth-child(6) {
+  transition-delay: 0.5s;
+}
+.btn-53:hover span:nth-child(7) {
+  transition-delay: 0.6s;
+}
+.btn-53:hover span:nth-child(8) {
+  transition-delay: 0.7s;
+}
+.box1{
+  height: 35vw;
+  width: 100%;
+  /* background-color: red; */
+  border-radius: 50px;
+}
+.box1 img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+}
+.mini-text{
+  height: 4vw;
+  width: 100%;
+  /* background-color: red; */
+  padding: 2vw 2vw ;
+  font-size: 1.3vw;
+  font-weight: 500;
+  font-family: roice;
+}
+.box2-wraper{
+  height:26vw;
+  width: 100%;
+  /* background-color: salmon; */
+  margin-top: 3vw;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.box2{
+  height: 25vw;
+  width: 25vw;
+  /* background-color: red; */
+  border-radius: 25px;
+  }
+  .box2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  .box3{
+  height: 25vw;
+  width: 25vw;
+  /* background-color: rgb(39, 151, 176); */
+  border-radius: 25px;
+  }
+  .box3 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  .texto{
+    height: 4vw;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+  }
+  .texto h4{
+    padding: 2vw 2vw ;
+  font-size: 1.3vw;
+  font-weight: 500;
+  font-family: roice;
+  }
+  #h4{
+    margin-left: 11vw;
+  }
+  .page2{
+    height:70vh ;
+    width: 100%;
+    padding: 3vw 3vw;
+    background-color: rgb(104, 166, 204);
+    
+   
+  }
+  .first-div{
+    height: 25vw;
+    width: 75vw;
+    border-bottom-left-radius: 20% 20%;
+    border-bottom-right-radius: 20% 20%;
+    background-color: rgb(169, 167, 119);
+    margin-left: 10vw;
+    display: flex;
+
+  }
+  .dbpart1{
+    height: 15vw;
+    width: 50%;
+    /* border: 2px solid red; */
+    padding: 2vw 2vw;
+  }
+  .dbpart1 p{
+    font-size: 2.5vw;
+    width: 89%;
+  }
+ .dbpart1  button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #183153;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  margin-top: 1vw;
+}
+
+.dbpart1 button:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #ffd401;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.dbpart1 button:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.dbpart1 button span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.dbpart1 button:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.dbpart2{
+    height: 14vw;
+    width: 50%;
+    /* border: 2px solid rgb(41, 132, 170); */
+}
+.work-cont{
+    height: 10vw;
+    width: 15vw;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 20% 20%;
+    border-bottom-right-radius: 20% 20%;
+    /* background-color: rgb(137, 201, 247); */
+    margin-left: 10vw;
+}
+.work-cont h3{
+  font-size: 1.3vw;
+}
+.swiper {
+      width: 25vw;
+      height: 35vw;
+    }
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .swiper-slide:nth-child(1n) {
+      background-color: rgb(206, 17, 17);
+    }
+
+    .swiper-slide:nth-child(2n) {
+      background-color: rgb(0, 140, 255);
+    }
+
+    .swiper-slide:nth-child(3n) {
+      background-color: rgb(10, 184, 111);
+    }
+
+    .swiper-slide:nth-child(4n) {
+      background-color: rgb(211, 122, 7);
+    }
+
+    .swiper-slide:nth-child(5n) {
+      background-color: rgb(118, 163, 12);
+    }
+
+    .swiper-slide:nth-child(6n) {
+      background-color: rgb(180, 10, 47);
+    }
+
+    .swiper-slide:nth-child(7n) {
+      background-color: rgb(35, 99, 19);
+    }
+
+    .swiper-slide:nth-child(8n) {
+      background-color: rgb(0, 68, 255);
+    }
+
+    .swiper-slide:nth-child(9n) {
+      background-color: rgb(218, 12, 218);
+    }
+
+    .swiper-slide:nth-child(10n) {
+      background-color: rgb(54, 94, 77);
+    }
+
+
+ 
+
+.page3{
+  height: 80vh;
+  width: 100%;
+  /* background-color: rgb(187, 94, 94); */
+}
+
+.page4{
+  height: 80vh;
+  width: 100%;
+  /* background-color: rgb(114, 173, 250); */
+}
+.community-sec{
+  height: 25vw;
+    width: 75vw;
+    border-top-left-radius: 20% 20%;
+    border-top-right-radius: 20% 20%;
+    background-color: rgb(169, 167, 119);
+    margin-left: 10vw;}
+
+.comm-sec1{
+  height: 4vw;
+  width: 100%;
+  /* background-color: red; */
+  padding: 2vw 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+.comm-sec1 i{
+  font-size: 1.9vw;
+}
+.comm-sec1 h4{
+  font-size: 1.2vw;
+}
+.comm-sec2{
+  height: 18vw;
+  width: 100%;
+  /* background-color: rgb(0, 255, 251); */
+  padding: 2vw 2vw;
+  display: flex;
+  
+}
+.headingd1{
+  height: 10vw;
+  width: 15vw;
+  font-size: 2vw;
+  /* background-color: salmon; */
+}
+.headingd2{
+  height: 13vw;
+  width: 28vw;
+  margin-left: 24vw;
+  font-size: 1.5vw;
+  /* background-color: rgb(28, 150, 81); */
+}
+@media(max-width:600px){
+  .page1{
+    height: 230vh;
+    width: 100%;
+    background-color: rgb(21, 20, 20);
+    display: flex;
+    display: none
+  }
+
+  .page2{
+    height:50vh ;
+    width: 100%;
+    background-color: rgb(12, 156, 245);
+    
+   
+  }
+  .first-div{
+    height: 32vw;
+    width: 75vw;
+    border-bottom-left-radius: 10% 10%;
+    border-bottom-right-radius: 10% 10%;
+    background-color: rgba(119, 141, 169, 1);
+    display: flex;
+
+  }
+  .dbpart1{
+    height: 29vw;
+    width: 50%;
+    /* border: 2px solid red; */
+    padding: 2vw 2vw;
+  }
+  .dbpart1 p{
+    font-size: 3.2vw;
+    width: 110%;
+  }
+ .dbpart1  button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #183153;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  height: 7vw;
+  width: 22vw;
+  margin-top: 2vw;
+}
+
+.dbpart1 button:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #ffd401;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.dbpart1 button:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.dbpart1 button span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 2vw;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.dbpart1 button:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.dbpart2{
+    height: 19vw;
+    width: 50%;
+    /* border: 2px solid rgb(41, 132, 170); */
+}
+.work-cont{
+    height: 10vw;
+    width: 14vw;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 20% 20%;
+    border-bottom-right-radius: 20% 20%;
+    background-color:rgba(224, 225, 221, 1);
+    margin-left: 10vw;
+  
+}
+.work-cont h3{
+  font-size: 1.7vw;
+  color: black;
+}
+.swiper {
+      width: 25vw;
+      height: 35vw;
+    }
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .swiper-slide:nth-child(1n) {
+      background-color: rgb(206, 17, 17);
+    }
+
+    .swiper-slide:nth-child(2n) {
+      background-color: rgb(0, 140, 255);
+    }
+
+    .swiper-slide:nth-child(3n) {
+      background-color: rgb(10, 184, 111);
+    }
+
+    .swiper-slide:nth-child(4n) {
+      background-color: rgb(211, 122, 7);
+    }
+
+    .swiper-slide:nth-child(5n) {
+      background-color: rgb(118, 163, 12);
+    }
+
+    .swiper-slide:nth-child(6n) {
+      background-color: rgb(180, 10, 47);
+    }
+
+    .swiper-slide:nth-child(7n) {
+      background-color: rgb(35, 99, 19);
+    }
+
+    .swiper-slide:nth-child(8n) {
+      background-color: rgb(0, 68, 255);
+    }
+
+    .swiper-slide:nth-child(9n) {
+      background-color: rgb(218, 12, 218);
+    }
+
+    .swiper-slide:nth-child(10n) {
+      background-color: rgb(54, 94, 77);
+    }
+
+
+ 
+
+
+
+
+}
+
+  </style>
+</head>
+<body >
+  <div class="page1">
+
+  <div class="container1">
+    <div class="text-area1">
+      <h1>Project <br>
+        we are
+        <br>proud of</h1>
+    </div>
+    <div class="text-area2">
+      <h1>Projects</h1>
+      <p>Each Project below has won multiple awards. We don’t just work for prizes,but they are a testimony that we love our job and do it well</p>
+      <button class="btn-53">
+        <div class="original">Know more</div>
+        <div class="letters">
+          
+          <span>R</span>
+          <span>E</span>
+          <span>J</span>
+          <span>O</span>
+          <span>U</span>
+          <span>I</span>
+          <span>C</span>
+          <span>E</span>
+        </div>
+      </button>
+      
+
+    </div>
+  </div>
+
+   
+  <div class="container2">
+    <div class="box1">
+      <img src="https://images.prismic.io/rejouice/bd04a6f5-1067-4bda-827a-216764c1c941_Group+31.jpg?auto=compress%2Cformat&fm=webp">
+    </div>
+    <div class="mini-text">
+      <h4>Crafting Tommorow <i class="ri-arrow-right-line"></i> </h4>
+    </div>
+
+
+
+
+
+
+    <div class="box2-wraper">
+    <div class="box2">
+      <img src="https://images.prismic.io/rejouice/bd04a6f5-1067-4bda-827a-216764c1c941_Group+31.jpg?auto=compress%2Cformat&fm=webp">
+    </div>
+    
+    <div class="box3">
+      <img src="https://images.prismic.io/rejouice/5db57a45-d415-4bf2-8758-40a10c43def6_Tenzr-Patient.jpg?auto=compress%2Cformat&fm=webp">
+    </div>
+
+    </div>
+    <div class="texto">
+      <h4>Crafting Tommorow <i class="ri-arrow-right-line"></i> </h4>
+      <h4 id="h4">Crafting Tommorow <i class="ri-arrow-right-line"></i> </h4>
+
+    </div>
+
+
+    <div class="box2-wraper">
+      <div class="box2">
+        <img src="https://images.prismic.io/rejouice/77073110-b0f1-4bfa-8a07-ed0e5c812a40_pinch_2.jpg?auto=compress%2Cformat&fm=webp">
+      </div>
+      
+      <div class="box3">
+        <img src="https://images.prismic.io/rejouice/f6db7afa-feb9-4103-96c1-5fe21097b213_Group+3709.jpg?auto=compress%2Cformat&fm=webp">
+      </div>
+  
+      </div>
+      <div class="texto">
+        <h4>Crafting Tommorow <i class="ri-arrow-right-line"></i> </h4>
+        <h4 id="h4">Crafting Tommorow <i class="ri-arrow-right-line"></i> </h4>
+  
+      </div>
+
+
+  </div>
+
+  </div>
+
+<div class="page2">
+<div class="first-div">
+
+<div class="dbpart1">
+  <p>REJOUICE is a digital brand accelerator based in San Diego&Paris</p>
+  <button>
+    <span>BUTTON</span>
+  </button>
+  
+</div> 
+
+
+<div class="dbpart2">
+  <div class="work-cont">
+    <h3>see the work</h3>
+  </div>
+</div>   
+
+</div> 
+
+
+
+
+   
+</div>
+
+<div class="page3">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+  </div>
+</div>
+
+<div class="page4">
+<div class="community-sec">
+  <div class="comm-sec1">
+    <h4>OUR COMMUNITY</h4>
+    <i class="ri-arrow-right-line"></i>
+  </div>
+  <div class="comm-sec2">
+    <div class="headingd1">
+      <h1>Projects</h1>
+    </div>
+    <div class="headingd2">
+      <p>Each Project below has won multiple awards. We don’t just work for prizes,but they are a testimony that we love our job and do it well</p>
+    </div>
+  </div>
+
+</div>  
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+   var swiper = new Swiper(".mySwiper", {
+      effect: "cards",
+      grabCursor: true,
+    });
+</script>
+</body>
+</html>

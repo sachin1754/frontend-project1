@@ -254,7 +254,7 @@
   .page2{
     height:70vh ;
     width: 100%;
-    background-color: rgb(104, 166, 204);
+    /* background-color: rgb(104, 166, 204); */
     display: none;
     
    
@@ -286,7 +286,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  background: #183153;
+  background: #000000;
   font-family: "Montserrat", sans-serif;
   box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -299,7 +299,7 @@
   content: " ";
   width: 0%;
   height: 100%;
-  background: #ffd401;
+  background: #5d5d5d;
   position: absolute;
   transition: all 0.4s ease-in-out;
   right: 0;
@@ -311,7 +311,7 @@
   width: 100%;
 }
 
-.dbpart1 button span {
+/* .dbpart1 button span {
   text-align: center;
   text-decoration: none;
   width: 100%;
@@ -322,10 +322,10 @@
   letter-spacing: 0.3em;
   z-index: 20;
   transition: all 0.3s ease-in-out;
-}
+} */
 
 .dbpart1 button:hover span {
-  color: #183153;
+  color: #f2f2f2;
   animation: scaleUp 0.3s ease-in-out;
 }
 
@@ -490,9 +490,9 @@
   }
 
   .page2{
-    height:70vh ;
+    height:20vh ;
     width: 100%;
-    background-color: rgb(104, 166, 204);
+    /* background-color: rgb(104, 166, 204); */
     display: block;
     padding: 0vw 3vw;
     justify-content: center;
@@ -504,7 +504,7 @@
     width: 85vw;
     border-bottom-left-radius: 10% 10%;
     border-bottom-right-radius: 10% 10%;
-    background-color: rgb(169, 167, 119);
+    background-color: rgba(119, 141, 169, 1);
     display: flex;  
    
    
@@ -526,13 +526,15 @@
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  background: #183153;
+  background: #d7d7d7;
   font-family: "Montserrat", sans-serif;
   box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   cursor: pointer;
   border: none;
   margin-top: 4vw;
+  /* height: 8vw;
+  width: 27vw; */
 }
 
 
@@ -540,14 +542,27 @@
   text-align: center;
   text-decoration: none;
   width: 100%;
-  padding: 10px 20px;
-  color: #fff;
-  font-size: 1.5vw;
-  font-weight: 700;
-  letter-spacing: 0.3em;
+  padding: 10px 10px;
+  color: #000000;
+  font-size: 2vw;
+  font-weight: 500;
+ 
   z-index: 20;
   transition: all 0.3s ease-in-out;
 };
+.dbpart1 button:hover span {
+  color: #f2f2f2;
+  animation: scaleUp 0.3s ease-in-out;
+}
+.dbpart1 button:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #080808;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
 
 .dbpart2{
     height: 30vw;
@@ -558,25 +573,144 @@
    
 }
 .work-cont{
-    height: 13vw;
-    width: 19vw;
+    height: 14vw;
+    width: 21vw;
     justify-content: center;
     text-align: center;
     display: flex;
     align-items: center;
     border-bottom-left-radius: 20% 20%;
     border-bottom-right-radius: 20% 20%;
-    background-color: rgb(137, 201, 247);
+    background-color: rgba(224, 225, 221, 1);
     margin-left: 10vw;
 }
 .work-cont h3{
-  font-size: 2.7vw;
+  font-size: 2.8vw;
+  color: black;
 }
 .swiper {
-      width: 25vw;
-      height: 35vw;
+      width: 72vw;
+      height: 100vw;
+      position: absolute;
+      margin-left: 10vw;
+}
+.swiper img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
     }
 
+    .swiper-slide:nth-child(1n) {
+      background-color: rgb(206, 17, 17);
+    }
+
+    .swiper-slide:nth-child(2n) {
+      background-color: rgb(0, 140, 255);
+    }
+
+    .swiper-slide:nth-child(3n) {
+      background-color: rgb(10, 184, 111);
+    }
+
+    .swiper-slide:nth-child(4n) {
+      background-color: rgb(211, 122, 7);
+    }
+
+    .swiper-slide:nth-child(5n) {
+      background-color: rgb(118, 163, 12);
+    }
+
+    .swiper-slide:nth-child(6n) {
+      background-color: rgb(180, 10, 47);
+    }
+
+    .swiper-slide:nth-child(7n) {
+      background-color: rgb(35, 99, 19);
+    }
+
+    .swiper-slide:nth-child(8n) {
+      background-color: rgb(0, 68, 255);
+    }
+
+    .swiper-slide:nth-child(9n) {
+      background-color: rgb(218, 12, 218);
+    }
+
+    .swiper-slide:nth-child(10n) {
+      background-color: rgb(54, 94, 77);
+    }
+
+
+ 
+
+.page3{
+  height: 50vh;
+  width: 100%;
+  display: block;
+  position: relative;
+  /* background-color:   rgb(187, 94, 94); */
+}
+
+.page4{
+  height: 80vh;
+  width: 100%;
+  display: block;
+  background-color: rgb(114, 173, 250);
+}
+.community-sec{
+  height: 25vw;
+    width: 75vw;
+    border-top-left-radius: 20% 20%;
+    border-top-right-radius: 20% 20%;
+    background-color: rgb(169, 167, 119);
+    /* margin-left: 10vw; */
+  }
+
+.comm-sec1{
+  height: 4vw;
+  width: 100%;
+  /* background-color: red; */
+  padding: 2vw 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+.comm-sec1 i{
+  font-size: 1.9vw;
+}
+.comm-sec1 h4{
+  font-size: 1.2vw;
+}
+.comm-sec2{
+  height: 18vw;
+  width: 100%;
+  /* background-color: rgb(0, 255, 251); */
+  padding: 2vw 2vw;
+  display: flex;
+  
+}
+.headingd1{
+  height: 10vw;
+  width: 15vw;
+  font-size: 2vw;
+  /* background-color: salmon; */
+}
+.headingd2{
+  height: 13vw;
+  width: 28vw;
+  margin-left: 24vw;
+  font-size: 1.5vw;
+  /* background-color: rgb(28, 150, 81); */
+}
 
 
 
@@ -675,7 +809,7 @@
 <div class="dbpart1">
   <p>REJOUICE is a digital brand accelerator based in San Diego&Paris</p>
   <button>
-    <span>BUTTON</span>
+    <span>Know more</span>
   </button>
   
 </div> 
@@ -704,12 +838,12 @@
       <div class="swiper-slide">
         <img src="mom ring.jpg">
       </div>
-      <div class="swiper-slide"> <img src="metal.jpg"> </div>
-      <div class="swiper-slide"> <img src="jeep.jpg" ></div>
+      <div class="swiper-slide"> <img src="https://images.prismic.io/rejouice/5db57a45-d415-4bf2-8758-40a10c43def6_Tenzr-Patient.jpg?auto=compress%2Cformat&fm=webp"> </div>
+
       <div class="swiper-slide"><img src="Aunty.jpg"> </div>
-      <div class="swiper-slide"><img src="metal.jpg"> </div>
-      <div class="swiper-slide"><img src="metal.jpg"> </div>
-      <div class="swiper-slide"><img src="metal.jpg"></div>
+      <div class="swiper-slide"><img src="https://images.prismic.io/rejouice/23fcfc8d-ad26-4f2c-a55f-da974c467a14_ababab.jpg?auto=compress%2Cformat&fm=webp"> </div>
+      <div class="swiper-slide"><img src="https://images.prismic.io/rejouice/b6c41a8d-5df3-4668-9615-e485699bcf50_yellow_2.jpg?auto=compress%2Cformat&fm=webp"> </div>
+      <div class="swiper-slide"><img src="https://images.prismic.io/rejouice/e07af211-6160-4668-a5d8-8d5cd6f27fd2_Rectangle+969.jpg?auto=compress%2Cformat&fm=webp"></div>
     </div>
   </div>
 </div>

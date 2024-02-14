@@ -265,19 +265,20 @@
     border-bottom-left-radius: 20% 20%;
     border-bottom-right-radius: 20% 20%;
     background-color: rgb(169, 167, 119);
-    margin-left: 10vw;
     display: flex;
 
   }
+
+
   .dbpart1{
-    height: 15vw;
+    height: 25vw;
     width: 50%;
     /* border: 2px solid red; */
     padding: 2vw 2vw;
   }
   .dbpart1 p{
-    font-size: 2.5vw;
-    width: 89%;
+    font-size: 3vw;
+    width: 110%;
   }
  .dbpart1  button {
   position: relative;
@@ -343,9 +344,11 @@
 }
 
 .dbpart2{
-    height: 14vw;
+    height: 24vw;
     width: 50%;
     /* border: 2px solid rgb(41, 132, 170); */
+    justify-content: center;
+    display: flex;
 }
 .work-cont{
     height: 10vw;
@@ -356,7 +359,7 @@
     align-items: center;
     border-bottom-left-radius: 20% 20%;
     border-bottom-right-radius: 20% 20%;
-    /* background-color: rgb(137, 201, 247); */
+    background-color: rgb(137, 201, 247);
     /* margin-left: 10vw; */
 }
 .work-cont h3{
@@ -478,42 +481,44 @@
   /* background-color: rgb(28, 150, 81); */
 }
 @media(max-width:600px){
+
   .page1{
     height: 230vh;
     width: 100%;
     background-color: rgb(21, 20, 20);
-    display: flex;
-    display: none
+    display: none;
   }
 
   .page2{
-    height:20vh ;
+    height:70vh ;
     width: 100%;
-    background-color: rgb(12, 245, 230);
+    background-color: rgb(104, 166, 204);
     display: block;
-  }
+    padding: 0vw 3vw;
+    justify-content: center;
+    display: flex;
+}
 
-  .first-div{
+.first-div{
     height: 35vw;
-    width: 75vw;
-    border-radius: 5px;
+    width: 85vw;
     border-bottom-left-radius: 10% 10%;
     border-bottom-right-radius: 10% 10%;
-    background-color: rgba(119, 141, 169, 1);
-    display: flex;
-    margin-right: 12vw;
+    background-color: rgb(169, 167, 119);
+    display: flex;  
    
-
-  }
+   
+  };
+ 
   .dbpart1{
-    height: 29vw;
+    height: 25vw;
     width: 60%;
-    /* border: 2px solid red; */
+    border: 2px solid rgb(242, 18, 18);
     padding: 2vw 2vw;
   }
   .dbpart1 p{
-    font-size: 4vw;
-    width: 110%;
+    font-size: 4.3vw;
+    width: 130%;
   }
  .dbpart1  button {
   position: relative;
@@ -527,207 +532,59 @@
   overflow: hidden;
   cursor: pointer;
   border: none;
-  height: 7vw;
-  width: 20vw;
-  margin-top: 3vw;
+  margin-top: 4vw;
 }
 
-.dbpart1 button:after {
-  content: " ";
-  width: 0%;
-  height: 100%;
-  background: #ffd401;
-  position: absolute;
-  transition: all 0.4s ease-in-out;
-  right: 0;
-}
-
-.dbpart1 button:hover::after {
-  right: auto;
-  left: 0;
-  width: 100%;
-}
 
 .dbpart1 button span {
   text-align: center;
   text-decoration: none;
   width: 100%;
-  padding: 18px 20px;
+  padding: 10px 20px;
   color: #fff;
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-weight: 700;
   letter-spacing: 0.3em;
   z-index: 20;
   transition: all 0.3s ease-in-out;
-}
-
-.dbpart1 button:hover span {
-  color: #183153;
-  animation: scaleUp 0.3s ease-in-out;
-}
-
-@keyframes scaleUp {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(0.95);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
+};
 
 .dbpart2{
-    height: 19vw;
+    height: 30vw;
     width: 40%;
     /* border: 2px solid rgb(41, 132, 170); */
+    justify-content: center;
+    display: flex;
+   
 }
 .work-cont{
-    height: 8vw;
-    width: 16vw;
+    height: 13vw;
+    width: 19vw;
     justify-content: center;
     text-align: center;
     display: flex;
     align-items: center;
     border-bottom-left-radius: 20% 20%;
     border-bottom-right-radius: 20% 20%;
-    background-color:rgba(224, 225, 221, 1);
+    background-color: rgb(137, 201, 247);
     margin-left: 10vw;
-  
 }
 .work-cont h3{
-  font-size: 1.9vw;
-  color: black;
+  font-size: 2.7vw;
 }
 .swiper {
-      width: 75vw;
-      height: 85vw;
-     
+      width: 25vw;
+      height: 35vw;
     }
 
-    .swiper-slide {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 18px;
-      font-size: 22px;
-      font-weight: bold;
-      color: #fff;
-    }
-    .swiper-slide img{
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
-
-    .swiper-slide:nth-child(1n) {
-      background-color: rgb(206, 17, 17);
-    }
-
-    .swiper-slide:nth-child(2n) {
-      background-color: rgb(0, 140, 255);
-    }
-
-    .swiper-slide:nth-child(3n) {
-      background-color: rgb(10, 184, 111);
-    }
-
-    .swiper-slide:nth-child(4n) {
-      background-color: rgb(211, 122, 7);
-    }
-
-    .swiper-slide:nth-child(5n) {
-      background-color: rgb(118, 163, 12);
-    }
-
-    .swiper-slide:nth-child(6n) {
-      background-color: rgb(180, 10, 47);
-    }
-
-    .swiper-slide:nth-child(7n) {
-      background-color: rgb(35, 99, 19);
-    }
-
-    .swiper-slide:nth-child(8n) {
-      background-color: rgb(0, 68, 255);
-    }
-
-    .swiper-slide:nth-child(9n) {
-      background-color: rgb(218, 12, 218);
-    }
-
-    .swiper-slide:nth-child(10n) {
-      background-color: rgb(54, 94, 77);
-    }
-
-  .page3{
-  height: 40vh;
-  width: 100%;
-  display: block;
-  background-color: rgb(38, 166, 199);
- 
-}
-
-.page4{
-  height: 30vh;
-  width: 100%;
-  display: block;
-  background-color: rgb(114, 173, 250);
-}
-.community-sec{
-  height: 25vw;
-    width: 75vw;
-    border-top-left-radius: 20% 20%;
-    border-top-right-radius: 20% 20%;
-    background-color: rgb(238, 232, 57);
-    margin-left: 10vw;}
-
-.comm-sec1{
-  height: 4vw;
-  width: 100%;
-  /* background-color: red; */
-  padding: 2vw 2vw;
-  display: flex;
-  justify-content: space-between;
-}
-.comm-sec1 i{
-  font-size: 1.9vw;
-}
-.comm-sec1 h4{
-  font-size: 1.2vw;
-}
-.comm-sec2{
-  height: 18vw;
-  width: 100%;
-  /* background-color: rgb(0, 255, 251); */
-  padding: 2vw 2vw;
-  display: flex;
-  
-}
-.headingd1{
-  height: 10vw;
-  width: 15vw;
-  font-size: 2vw;
-  /* background-color: salmon; */
-}
-.headingd2{
-  height: 13vw;
-  width: 28vw;
-  margin-left: 24vw;
-  font-size: 1.5vw;
-  /* background-color: rgb(28, 150, 81); */
-}
- 
 
 
 
 
 }
 
-  </style>
+
+</style>
 </head>
 <body >
   <div class="page1">

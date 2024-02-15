@@ -366,15 +366,15 @@
   font-size: 1.3vw;
 }
 .swiper {
-      width: 25vw;
-      height: 35vw;
+      margin: 100px auto;
+      width: 320px;
+      height: 240px;
     }
 
     .swiper-slide {
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 18px;
       font-size: 22px;
       font-weight: bold;
       color: #fff;
@@ -419,8 +419,6 @@
     .swiper-slide:nth-child(10n) {
       background-color: rgb(54, 94, 77);
     }
-
-
  
 
 .page3{
@@ -490,16 +488,16 @@
   }
 
   .page2{
-    height:25vh ;
+    height:21vh ;
     width: 120%;
-    /* background-color: rgb(104, 166, 204); */
+    background-color: rgb(104, 166, 204);
     display: block;
     justify-content: center;
     display: flex;
 }
 
 .first-div{
-    height: 35vw;
+    height: 39vw;
     width: 105vw;
     border-bottom-left-radius: 10% 10%;
     border-bottom-right-radius: 10% 10%;
@@ -520,7 +518,7 @@
   }
   .dbpart1 p{
     font-size: 4.9vw;
-    width: 110%;
+    width: 100%;
   }
  .dbpart1  button {
   position: relative;
@@ -591,10 +589,9 @@
   color: black;
 }
 .swiper {
-      width: 60vw;
-      height: 80vw;
-      position: absolute;
-   
+      width: 95vw;
+      height: 125vw;
+      border-radius: 30px;
 }
 .swiper img{
   height: 100%;
@@ -602,24 +599,63 @@
   object-fit: cover;
 }
 
-.swiper-slide {
+
+    .swiper-slide {
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 18px;
       font-size: 22px;
       font-weight: bold;
       color: #fff;
     }
 
+    .swiper-slide:nth-child(1n) {
+      background-color: rgb(206, 17, 17);
+    }
+
+    .swiper-slide:nth-child(2n) {
+      background-color: rgb(0, 140, 255);
+    }
+
+    .swiper-slide:nth-child(3n) {
+      background-color: rgb(10, 184, 111);
+    }
+
+    .swiper-slide:nth-child(4n) {
+      background-color: rgb(211, 122, 7);
+    }
+
+    .swiper-slide:nth-child(5n) {
+      background-color: rgb(118, 163, 12);
+    }
+
+    .swiper-slide:nth-child(6n) {
+      background-color: rgb(180, 10, 47);
+    }
+
+    .swiper-slide:nth-child(7n) {
+      background-color: rgb(35, 99, 19);
+    }
+
+    .swiper-slide:nth-child(8n) {
+      background-color: rgb(0, 68, 255);
+    }
+
+    .swiper-slide:nth-child(9n) {
+      background-color: rgb(218, 12, 218);
+    }
+
+    .swiper-slide:nth-child(10n) {
+      background-color: rgb(54, 94, 77);
+    }
  
 
 .page3{
-  height: 60vh;
+  height: 70vh;
   width: 120%;
   display: block;
   position: relative;
-  /* background-color:   rgb(187, 94, 94); */
+  background-color:   rgb(187, 94, 94);
   justify-content: center;
   display: flex;
 }
@@ -801,18 +837,14 @@
 <div class="page3">
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="building.jpg">
-      </div>
-      <div class="swiper-slide">
-        <img src="mom ring.jpg">
-      </div>
-      <div class="swiper-slide"> <img src="jeep.jpg"> </div>
-
-      <div class="swiper-slide"><img src="Aunty.jpg"> </div>
-      <div class="swiper-slide"><img src="mom ring.jpg"> </div>
-      <div class="swiper-slide"><img src="metal.jpg"> </div>
-      <div class="swiper-slide"><img src="ring.jpg"></div>
+      <div class="swiper-slide"> <img src="https://images.prismic.io/rejouice/bd04a6f5-1067-4bda-827a-216764c1c941_Group+31.jpg?auto=compress%2Cformat&fm=webp"> </div>
+      <div class="swiper-slide"> <img src="building.jpg"> </div>
+      <div class="swiper-slide"> <img src="Aunty.jpg"> </div>
+      <div class="swiper-slide"> <img src="https://images.prismic.io/rejouice/e07af211-6160-4668-a5d8-8d5cd6f27fd2_Rectangle+969.jpg?auto=compress%2Cformat&fm=webp"> </div>
+      <div class="swiper-slide"> <img src="https://images.prismic.io/rejouice/5db57a45-d415-4bf2-8758-40a10c43def6_Tenzr-Patient.jpg?auto=compress%2Cformat&fm=webp"> </div>
+      <div class="swiper-slide"> <img src="https://images.prismic.io/rejouice/b6c41a8d-5df3-4668-9615-e485699bcf50_yellow_2.jpg?auto=compress%2Cformat&fm=webp"> </div>
+      <div class="swiper-slide"> <img src="https://images.prismic.io/rejouice/23fcfc8d-ad26-4f2c-a55f-da974c467a14_ababab.jpg?auto=compress%2Cformat&fm=webp"> </div>
+     
     </div>
   </div>
 </div>
@@ -838,10 +870,95 @@
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
-   var swiper = new Swiper(".mySwiper", {
-      effect: "cards",
-      grabCursor: true,
-    });
+  var swiper = new Swiper(".mySwiper", {
+    grabCursor: true,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        shadow: true,
+        translate: [0, 0, -400],
+      },
+      next: {
+        translate: ["100%", 0, 0],
+      },
+    },
+  });
+  var swiper2 = new Swiper(".mySwiper2", {
+    grabCursor: true,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        shadow: true,
+        translate: ["-120%", 0, -500],
+      },
+      next: {
+        shadow: true,
+        translate: ["120%", 0, -500],
+      },
+    },
+  });
+  var swiper3 = new Swiper(".mySwiper3", {
+    grabCursor: true,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        shadow: true,
+        translate: ["-20%", 0, -1],
+      },
+      next: {
+        translate: ["100%", 0, 0],
+      },
+    },
+  });
+  var swiper4 = new Swiper(".mySwiper4", {
+    grabCursor: true,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        shadow: true,
+        translate: [0, 0, -800],
+        rotate: [180, 0, 0],
+      },
+      next: {
+        shadow: true,
+        translate: [0, 0, -800],
+        rotate: [-180, 0, 0],
+      },
+    },
+  });
+  var swiper5 = new Swiper(".mySwiper5", {
+    grabCursor: true,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        shadow: true,
+        translate: ["-125%", 0, -800],
+        rotate: [0, 0, -90],
+      },
+      next: {
+        shadow: true,
+        translate: ["125%", 0, -800],
+        rotate: [0, 0, 90],
+      },
+    },
+  });
+  var swiper6 = new Swiper(".mySwiper6", {
+    grabCursor: true,
+    effect: "creative",
+    creativeEffect: {
+      prev: {
+        shadow: true,
+        origin: "left center",
+        translate: ["-5%", 0, -200],
+        rotate: [0, 100, 0],
+      },
+      next: {
+        origin: "right center",
+        translate: ["5%", 0, -200],
+        rotate: [0, -100, 0],
+      },
+    },
+  });
 </script>
 </body>
 </html>

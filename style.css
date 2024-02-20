@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: roice;
+ 
 
   /* background-color: rgb(227, 227, 217); */
 }
@@ -59,7 +59,7 @@ body {
 
 .page1-content span {
   display: inline-block;
-  font-family: roice;
+  font-family: roju;
 }
 
 .cursor {

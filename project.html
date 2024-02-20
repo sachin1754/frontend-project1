@@ -18,8 +18,18 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
+    font-family: roju;
 
   }
+  @font-face {
+  font-family: rice;
+  src: url(./NBInternationalProBoo.ttf);
+
+}
+@font-face {
+  font-family: roju;
+  src: url(./64d3dd9edfb41666c35b15c0_NeueHaasDisplay-Roman\ \(1\).ttf);
+}
   .page1{
     height: 230vh;
     width: 100%;
@@ -462,65 +472,217 @@
     }
  
 
-.page3{
-  height: 100vh;
-  width: 120%;
-  display: none;
-  /* background-color: rgb(187, 94, 94); */
-}
 
-.page4{
-  height: 80vh;
-  width: 120%;
-  display: none;
-  /* background-color: rgb(114, 173, 250); */
+.deleted-section{
+  height: 300vh;
+  width: 100%;
+  background-color: rgb(72, 126, 126);
+  padding: 3vw 3vw;
+display: none;
 }
-.community-sec{
-  height: 25vw;
-    width: 75vw;
-    border-top-left-radius: 20% 20%;
-    border-top-right-radius: 20% 20%;
-    background-color: rgb(169, 167, 119);
-    /* margin-left: 10vw; */
-  }
-
-.comm-sec1{
+.sec1{
   height: 4vw;
   width: 100%;
-  /* background-color: red; */
-  padding: 2vw 2vw;
+  background-color: red;
   display: flex;
   justify-content: space-between;
 }
-.comm-sec1 i{
-  font-size: 1.9vw;
-}
-.comm-sec1 h4{
-  font-size: 1.2vw;
-}
-.comm-sec2{
-  height: 18vw;
-  width: 100%;
-  /* background-color: rgb(0, 255, 251); */
-  padding: 2vw 2vw;
-  display: flex;
-  
-}
-.headingd1{
-  height: 10vw;
-  width: 15vw;
+.sec1 h3{
   font-size: 2vw;
-  /* background-color: salmon; */
 }
-.headingd2{
-  height: 13vw;
-  width: 28vw;
-  margin-left: 24vw;
-  font-size: 1.5vw;
-  /* background-color: rgb(28, 150, 81); */
+.sec1 i{
+  font-size: 2vw;
+}
+.sec2{
+  height: 19vw;
+  width: 100%;
+  background-color: rgb(79, 78, 77);
+}
+.sec2 p{
+  font-size: 5vw;
+  width: 79%;
+}
+.sec3{
+  height: 20vh;
+  width: 100%;
+  background-color: rgb(88, 103, 103);
+}
+.sec3 p{
+  font-size: 3vw;
+  width: 90%;
+}
+/* .sec4{
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(220, 84, 84);
+  margin-top: 2vw;} */
+
+.heading-area{
+  height: 5vw;
+  width: 100%;
+  background-color: salmon;
+  display: flex;
+
+  justify-content: space-between;
+}
+.heading-area h1{
+  font-size: 3vw;
+  font-weight: 400;
+}
+.heading-area h4{
+  font-size: 2vw;
+  font-weight: 400;
+}
+.image-area{
+  height: 65vw;
+  width: 100%;
+  background-color: rgb(154, 100, 93);
+  margin-top: 3vw;
+  border-radius: 25px;
+}
+.img-sec{
+  height: 50vh;
+  width: 100%;
+  background-color: brown;
+  display: flex;
+  margin-top: 2vw;
+  justify-content: space-between;
+}
+.box{
+  height: 20vw;
+  width: 35vw;
+  background-color: aquamarine;
+}
+.box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.boxo{
+  height: 20vw;
+  width: 35vw;
+  background-color: rgb(246, 58, 16);
+}
+.boxo img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media(max-width:600px){
+  .page1{
+    display: none;
+  }
+  .page2{
+    display: none;
+  }
+  .deleted-section{
+  height: 110vh;
+  width: 100%;
+  background-color: rgb(72, 126, 126);
+  padding: 3vw 3vw;
+  display: block;
+}
+.sec1{
+  height: 4vw;
+  width: 100%;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+}
+.sec1 h3{
+  font-size: 2vw;
+}
+.sec1 i{
+  font-size: 2vw;
+}
+.sec2{
+  height: 19vw;
+  width: 100%;
+  background-color: rgb(79, 78, 77);
+}
+.sec2 p{
+  font-size: 5vw;
+  width: 79%;
+}
+.sec3{
+  height: 20vh;
+  width: 100%;
+  background-color: rgb(88, 103, 103);
+}
+.sec3 p{
+  font-size: 3vw;
+  width: 90%;
+}
+/* .sec4{
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(220, 84, 84);
+  margin-top: 2vw;} */
+
+.heading-area{
+  height: 5vw;
+  width: 100%;
+  background-color: salmon;
+  display: flex;
+
+  justify-content: space-between;
+}
+.heading-area h1{
+  font-size: 3vw;
+  font-weight: 400;
+}
+.heading-area h4{
+  font-size: 2vw;
+  font-weight: 400;
+}
+.image-area{
+  height:127vw;
+  width: 100%;
+  background-color: rgb(128, 35, 131);
+  margin-top: 3vw;
+  border-radius: 25px;
+}
+.img-sec{
+  height: 24vh;
+  width: 100%;
+  background-color: brown;
+  display: flex;
+  margin-top: 2vw;
+  justify-content: space-between;
+}
+.box{
+  height: 46vw;
+  width: 46vw;
+  background-color: aquamarine;
+}
+.box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.boxo{
+  height:46vw;
+  width: 46vw;
+  background-color: rgb(246, 58, 16);
+}
+.boxo img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 
+
+
+
+
+
+
+
+
+
+}
 
 </style>
 </head>
@@ -630,6 +792,7 @@
   </div>
 </div>   
 
+
 </div> 
 
 
@@ -638,39 +801,51 @@
    
 </div>
 
-<div class="page3">
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"> <img src="https://images.prismic.io/rejouice/bd04a6f5-1067-4bda-827a-216764c1c941_Group+31.jpg?auto=compress%2Cformat&fm=webp"> </div>
-      <div class="swiper-slide"> <img src="building.jpg"> </div>
-      <div class="swiper-slide"> <img src="Aunty.jpg"> </div>
-      <div class="swiper-slide"> <img src="https://images.prismic.io/rejouice/e07af211-6160-4668-a5d8-8d5cd6f27fd2_Rectangle+969.jpg?auto=compress%2Cformat&fm=webp"> </div>
-      <div class="swiper-slide"> <img src="https://images.prismic.io/rejouice/5db57a45-d415-4bf2-8758-40a10c43def6_Tenzr-Patient.jpg?auto=compress%2Cformat&fm=webp"> </div>
-      <div class="swiper-slide"> <img src="https://images.prismic.io/rejouice/b6c41a8d-5df3-4668-9615-e485699bcf50_yellow_2.jpg?auto=compress%2Cformat&fm=webp"> </div>
-      <div class="swiper-slide"> <img src="https://images.prismic.io/rejouice/23fcfc8d-ad26-4f2c-a55f-da974c467a14_ababab.jpg?auto=compress%2Cformat&fm=webp"> </div>
-     
-    </div>
-  </div>
+
+
+<div class="deleted-section">
+<div class="sec1">
+  <h3>REJOUICE</h3>
+  <i class="ri-align-center"></i>
+</div>
+<div class="sec2">
+  <p>REJOUICE is a digital brand accelerator based in San Diego&Paris
+  </p>
+</div>
+<div class="sec3">
+<p>Each Project below has won multiple awards. We don’t just work for prizes,but they are a testimony that we love our job and do it well</p>
 </div>
 
-<div class="page4">
-<div class="community-sec">
-  <div class="comm-sec1">
-    <h4>OUR COMMUNITY</h4>
-    <i class="ri-arrow-right-line"></i>
-  </div>
-  <div class="comm-sec2">
-    <div class="headingd1">
-      <h1>Projects</h1>
+<div class="sec4">
+  <div class="image-area">
+    <div class="heading-area">
+      <h1>Project</h1>
+      <h4>See all Work</h4>
     </div>
-    <div class="headingd2">
-      <p>Each Project below has won multiple awards. We don’t just work for prizes,but they are a testimony that we love our job and do it well</p>
-    </div>
-  </div>
+    
+    <div class="img-sec">
+      <div class="box">
+        <img src="https://images.prismic.io/rejouice/5db57a45-d415-4bf2-8758-40a10c43def6_Tenzr-Patient.jpg?auto=compress%2Cformat&fm=webp">
+      </div>
+      <div class="boxo">
+        <img src="https://images.prismic.io/rejouice/e07af211-6160-4668-a5d8-8d5cd6f27fd2_Rectangle+969.jpg?auto=compress%2Cformat&fm=webp">
+      </div>
 
-</div>  
+    </div>
+
+    <div class="img-sec">
+      <div class="box">
+        <img src="https://images.prismic.io/rejouice/b6c41a8d-5df3-4668-9615-e485699bcf50_yellow_2.jpg?auto=compress%2Cformat&fm=webp">
+      </div>
+      <div class="boxo">
+        <img src="https://images.prismic.io/rejouice/bd04a6f5-1067-4bda-827a-216764c1c941_Group+31.jpg?auto=compress%2Cformat&fm=webp">
+      </div>
+
+    </div>
+<button>know more</button>
+  </div>
 </div>
-
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>

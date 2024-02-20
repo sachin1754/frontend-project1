@@ -17,12 +17,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 
   }
   .page1{
     height: 230vh;
     width: 100%;
-    background-color: rgb(21, 20, 20);
+    background-color: rgb(0, 0, 0);
     display: flex;
   }
   .container1{
@@ -187,12 +188,24 @@
   width: 100%;
   /* background-color: red; */
   border-radius: 50px;
+  position: relative
 }
-.box1 img{
+.box1 video{
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 50px;
+}
+.box1 img{
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50px;
+  transition: all ease 1s;
+}
+.box1:hover img{
+  opacity: 0;
 }
 .mini-text{
   height: 4vw;
@@ -200,8 +213,10 @@
   /* background-color: red; */
   padding: 2vw 2vw ;
   font-size: 1.3vw;
-  font-weight: 500;
   font-family: roice;
+}
+.mini-text h4{
+  font-weight: 200;
 }
 .box2-wraper{
   height:26vw;
@@ -217,25 +232,50 @@
   width: 25vw;
   /* background-color: red; */
   border-radius: 25px;
+  position: relative;
+  }
+  .box2 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 1s;
+    border-radius: 25px;
   }
   .box2 img{
     height: 100%;
     width: 100%;
+    position: absolute;
     object-fit: cover;
     border-radius: 25px;
+  }
+  .box2:hover img{
+    opacity: 0;
   }
   .box3{
   height: 25vw;
   width: 25vw;
   /* background-color: rgb(39, 151, 176); */
   border-radius: 25px;
+  position: relative;
   }
   .box3 img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    position: absolute;
     border-radius: 25px;
   }
+  .box3 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  .box3:hover img{
+    opacity: 0;
+  }
+
+  
   .texto{
     height: 4vw;
     width: 100%;
@@ -479,247 +519,7 @@
   font-size: 1.5vw;
   /* background-color: rgb(28, 150, 81); */
 }
-@media(max-width:600px){
 
-  .page1{
-    height: 230vh;
-    width: 100%;
-    background-color: rgb(21, 20, 20);
-    display: none;
-  }
-
-  .page2{
-    height:20vh ;
-    width: 120%;
-    /* background-color: rgb(234, 108, 108); */
-    display: block;
-    justify-content: center;
-    display: flex;
-}
-
-.first-div{
-    height: 37vw;
-    width: 105vw;
-    border-bottom-left-radius: 10% 10%;
-    border-bottom-right-radius: 10% 10%;
-    background-color: rgba(119, 141, 169, 1);
-    color: white;
-    display: flex;  
-  };
- 
-  .dbpart1{
-    height: 44vw;
-    width: 60%;
-    /* border: 2px solid rgb(242, 18, 18); */
-    padding: 2vw 2vw;
-    color: rgb(255, 255, 255);
-  }
-  .dbpart1 p{
-    font-size: 3vw;
-    width: 60%;
-  }
- .dbpart1  button {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  background: #d7d7d7;
-  font-family: "Montserrat", sans-serif;
-  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  cursor: pointer;
-  border: none;
-  margin-top: 4vw;
-  /* height: 8vw;
-  width: 27vw; */
-}
-
-
-.dbpart1 button span {
-  text-align: center;
-  text-decoration: none;
-  width: 100%;
-  padding: 10px 10px;
-  color: #000000;
-  font-size: 2.5vw;
-  font-weight: 500;
- 
-  z-index: 20;
-  transition: all 0.3s ease-in-out;
-};
-.dbpart1 button:hover span {
-  color: #f2f2f2;
-  animation: scaleUp 0.3s ease-in-out;
-}
-.dbpart1 button:after {
-  content: " ";
-  width: 0%;
-  height: 100%;
-  background: #080808;
-  position: absolute;
-  transition: all 0.4s ease-in-out;
-  right: 0;
-}
-
-.dbpart2{
-    height: 30vw;
-    width: 40%;
-    /* border: 2px solid rgb(41, 132, 170); */
-    justify-content: center;
-    display: flex;
-   
-}
-.work-cont{
-    height: 14vw;
-    width: 23vw;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    border-bottom-left-radius: 20% 20%;
-    border-bottom-right-radius: 20% 20%;
-    background-color: rgba(224, 225, 221, 1);
-    margin-left: 10vw;
-}
-.work-cont h3{
-  font-size: 2.9vw;
-  color: black;
-}
-.swiper {
-      width: 105vw;
-      height: 145vw;
-      border-radius: 20px;
-}
-.swiper img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-
-    .swiper-slide {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 22px;
-      font-weight: bold;
-      color: #fff;
-    }
-
-    .swiper-slide:nth-child(1n) {
-      background-color: rgb(206, 17, 17);
-    }
-
-    .swiper-slide:nth-child(2n) {
-      background-color: rgb(0, 140, 255);
-    }
-
-    .swiper-slide:nth-child(3n) {
-      background-color: rgb(10, 184, 111);
-    }
-
-    .swiper-slide:nth-child(4n) {
-      background-color: rgb(211, 122, 7);
-    }
-
-    .swiper-slide:nth-child(5n) {
-      background-color: rgb(118, 163, 12);
-    }
-
-    .swiper-slide:nth-child(6n) {
-      background-color: rgb(180, 10, 47);
-    }
-
-    .swiper-slide:nth-child(7n) {
-      background-color: rgb(35, 99, 19);
-    }
-
-    .swiper-slide:nth-child(8n) {
-      background-color: rgb(0, 68, 255);
-    }
-
-    .swiper-slide:nth-child(9n) {
-      background-color: rgb(218, 12, 218);
-    }
-
-    .swiper-slide:nth-child(10n) {
-      background-color: rgb(54, 94, 77);
-    }
- 
-
-.page3{
-  height: 70vh;
-  width: 120%;
-  display: block;
-  position: relative;
-  /* background-color:   rgb(187, 94, 94); */
- 
-}
-
-.page4{
-  height: 38vh;
-  width: 120%;
-  display: block;
-  /* background-color: rgb(114, 173, 250); */
-  justify-content: center;
-  display: flex;
-}
-.community-sec{
-  height: 63vw;
-    width: 120vw;
-    border-top-left-radius: 10% 10%;
-    border-top-right-radius: 10% 10%;
-    background-color: rgb(217, 217, 216);
-    margin-top: 21vw;
-    padding: 2vw 2vw;
-  
-    
-  }
-
-.comm-sec1{
-  height: 9vw;
-  width: 100%;
-  /* background-color: red; */
-  margin-top: 8vw;
- 
-  display: flex;
-  justify-content: space-between;
-  color: black;
-}
-.comm-sec1 i{
-  font-size: 4vw;
-}
-.comm-sec1 h4{
-  font-size: 3vw;
-}
-.comm-sec2{
-  height: 25vw;
-  width: 100%;
-  /* background-color: rgb(0, 255, 251); */
-  margin-top: 8vw;
-  padding: 2vw 2vw;
-  display: flex;
-  
-}
-.headingd1{
-  height: 13vw;
-  width: 39vw;
-  font-size: 4.9vw;
-  /* background-color: salmon; */
-}
-.headingd2{
-  height: 19vw;
-  width: 53vw;
-  margin-left: 24vw;
-  font-size: 3.6vw;
-  /* background-color: rgb(28, 150, 81); */
-}
-
-
-
-
-}
 
 
 </style>
@@ -759,9 +559,10 @@
   <div class="container2">
     <div class="box1">
       <img src="https://images.prismic.io/rejouice/bd04a6f5-1067-4bda-827a-216764c1c941_Group+31.jpg?auto=compress%2Cformat&fm=webp">
+      <video autoplay loop muted src="ring.mp4"></video>
     </div>
     <div class="mini-text">
-      <h4>Crafting Tommorow <i class="ri-arrow-right-line"></i> </h4>
+      <h4>Qura Ring <i class="ri-arrow-right-line"></i> </h4>
     </div>
 
 
@@ -771,17 +572,19 @@
 
     <div class="box2-wraper">
     <div class="box2">
-      <img src="https://images.prismic.io/rejouice/bd04a6f5-1067-4bda-827a-216764c1c941_Group+31.jpg?auto=compress%2Cformat&fm=webp">
+      <img src="https://images.prismic.io/rejouice/e07af211-6160-4668-a5d8-8d5cd6f27fd2_Rectangle+969.jpg?auto=compress%2Cformat&fm=webp">
+      <video autoplay loop muted src="stone.mp4"></video>
     </div>
     
     <div class="box3">
       <img src="https://images.prismic.io/rejouice/5db57a45-d415-4bf2-8758-40a10c43def6_Tenzr-Patient.jpg?auto=compress%2Cformat&fm=webp">
+      <video autoplay loop muted src="capmp4.mp4"></video>
     </div>
 
     </div>
     <div class="texto">
       <h4>Crafting Tommorow <i class="ri-arrow-right-line"></i> </h4>
-      <h4 id="h4">Crafting Tommorow <i class="ri-arrow-right-line"></i> </h4>
+      <h4 id="h4">Proof<i class="ri-arrow-right-line"></i> </h4>
 
     </div>
 
@@ -789,16 +592,18 @@
     <div class="box2-wraper">
       <div class="box2">
         <img src="https://images.prismic.io/rejouice/77073110-b0f1-4bfa-8a07-ed0e5c812a40_pinch_2.jpg?auto=compress%2Cformat&fm=webp">
+        <video autoplay loop muted src="13.mp4"></video>
       </div>
       
       <div class="box3">
         <img src="https://images.prismic.io/rejouice/f6db7afa-feb9-4103-96c1-5fe21097b213_Group+3709.jpg?auto=compress%2Cformat&fm=webp">
+        <video autoplay loop muted src="doctor.mp4"></video>
       </div>
   
       </div>
       <div class="texto">
         <h4>Crafting Tommorow <i class="ri-arrow-right-line"></i> </h4>
-        <h4 id="h4">Crafting Tommorow <i class="ri-arrow-right-line"></i> </h4>
+        <h4 id="h4">GenCell <i class="ri-arrow-right-line"></i> </h4>
   
       </div>
 
